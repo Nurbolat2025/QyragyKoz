@@ -1,95 +1,53 @@
-<p align="center">
-  <img src="QyragyKoz.ico" width="100" height="100" alt="QyragyKoz Logo">
-</p>
+🛡️ Qyragy Koz (Vigilant Eye) Global 4.0
+Open Source USB Antivirus & HID Monitor | Made in Kazakhstan 🇰🇿
 
-# 🛡️ Qyragy Koz - Smart USB Antivirus
+🇰🇿 Қазақша (Kazakh)
+📖 Жоба туралы
+Qyragy Koz — мектептер мен мекемелердегі компьютерлерді USB арқылы таралатын қауіптерден (жарлық-вирустар, autorun, жасырын майнерлер) және хакерлік құрылғылардан (Rubber Ducky) қорғауға арналған ашық бастапқы коды бар құрал. Мен бұл жобаны мемлекеттік қызметкер ретінде, ақылы антивирустар ауырлық ететін ескі компьютерлердің қауіпсіздігін арттыру үшін жасадым.
 
-[![Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Made in](https://img.shields.io/badge/Made%20in-Kazakhstan-cyan.svg)](https://github.com/topics/kazakhstan)
+✨ Негізгі мүмкіндіктері:
+🚀 USB Мониторинг: Флешка қосылған бойда автоматты түрде анықтайды.
 
-**Languages:** [🇺🇸 English](#-english) | [🇰🇿 Қазақша](#-қазақша) | [🇷🇺 Русский](#-русский)
+🛡️ HID Guard: Белгісіз клавиатураларды (Rubber Ducky) анықтап, жүйені бұғаттайды.
 
----
+🔒 Paranoid Mode: Қауіп анықталғанда Windows-ты автоматты түрде бұғаттау.
 
-## 🇺🇸 English
+📱 Telegram Ескертулері: Вирус табылғанда телефоныңызға шұғыл хабарлама жіберу.
 
-**Qyragy Koz** is an open-source USB security tool designed to protect computers from autorun viruses, shortcuts (.lnk), and hidden malware. It features **VirusTotal** integration for cloud scanning and sends real-time alerts via **Telegram**.
+💉 Вакцинация: Флешкада қорғалған autorun.inf папкасын жасау арқылы инфекцияның алдын алу.
 
-### ✨ Key Features
-* **Auto-Scan:** Automatically detects and scans connected USB drives.
-* **Vaccination:** Creates a protected `autorun.inf` folder to prevent future infections.
-* **Smart Detection:** Identifies malicious scripts (.vbs, .bat) and "Fake Folder" viruses (.exe).
-* **VirusTotal Integration:** Checks suspicious file hashes against 70+ antiviruses.
-* **Telegram Alerts:** Sends notifications to your phone when a virus is found.
-* **Hidden Files Restore:** Unhides folders that were hidden by viruses.
-* **Process Killer:** Terminates malicious processes (wscript, cscript) running in memory.
+⚙️ Автозагрузка: Windows қосылғанда жүйелік науада (Tray) автоматты түрде іске қосылу.
 
-### 🚀 How to Run
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/YOUR_USERNAME/QyragyKoz.git](https://github.com/YOUR_USERNAME/QyragyKoz.git)
-    cd QyragyKoz
-    ```
-2.  **Install dependencies:**
-    ```bash
-    pip install customtkinter pystray pillow requests pywin32
-    ```
-3.  **Configure Keys:**
-    * Open `QyragyKoz.py`.
-    * Find the **SETTINGS** section at the top.
-    * Enter your `TELEGRAM_BOT_TOKEN`, `CHAT_ID`, and `VIRUSTOTAL_API_KEY`.
-4.  **Run:**
-    ```bash
-    python QyragyKoz.py
-    ```
+🇬🇧 English
+📖 About the Project
+Qyragy Koz (meaning "Vigilant Eye") is a lightweight security agent designed to protect PC infrastructure from USB-borne threats and unauthorized HID devices. It bridges the gap for older systems where commercial antiviruses might impact performance.
 
----
+✨ Key Features:
+🚀 Real-time Monitoring: Instant detection of removable drives.
 
-## 🇰🇿 Қазақша
+🛡️ HID Guard: Detects unauthorized keyboards and hacking tools like Rubber Ducky.
 
-**Qyragy Koz (Қырағы Көз)** — USB флешкалар арқылы тарайтын вирустардан қорғайтын ашық кодты бағдарлама. Ол компьютерді "Autorun" вирустарынан, жасырын жапсырмалардан (.lnk) қорғайды және күдікті файлдарды **VirusTotal** базасы арқылы тексереді.
+🔒 Paranoid Mode: Automatically locks the workstation upon detecting a threat.
 
-### ✨ Ерекшеліктері
-* **Автоматты тексеру:** Флешка қосылған сәтте оны бірден тексереді.
-* **Вакцинация:** Флешкаға өшпейтін арнайы `autorun.inf` папкасын орнатып, вирус кіруіне жол бермейді.
-* **VirusTotal интеграциясы:** Күдікті `.exe` файлдарды интернет арқылы әлемдік базадан тексереді.
-* **Telegram хабарлама:** Вирус табылса, телефоныңызға бірден хабарлама келеді.
-* **Файлдарды емдеу:** Вирус жасырып тастаған папкаларды қайтадан ашады.
-* **Көптілді интерфейс:** Қазақ, Ағылшын және Орыс тілдерін қолдайды.
+📱 Telegram Alerts: Direct notification to your mobile device via Telegram Bot API.
 
-### 🚀 Қалай қосу керек?
-1.  **Жүктеп алыңыз:** Кодты компьютерге жүктеңіз.
-2.  **Кітапханаларды орнатыңыз:**
-    `pip install customtkinter pystray pillow requests pywin32`
-3.  **Баптау:**
-    * `QyragyKoz.py` файлын ашыңыз.
-    * Ішіндегі `SETTINGS` бөліміне Telegram және VirusTotal кілттерін жазыңыз.
-4.  **Іске қосу:** `python QyragyKoz.py` командасын теріңіз.
+💉 Auto-Vaccination: Neutralizes autorun.inf threats by creating a protected directory.
 
----
+⚙️ System Tray & Startup: Runs silently in the background and starts with Windows.
 
-## 🇷🇺 Русский
+🇷🇺 Русский (Russian)
+📖 О проекте
+Qyragy Koz — это комплексный агент безопасности с открытым исходным кодом, предназначенный для защиты ПК от угроз, распространяющихся через USB, и несанкционированных HID-устройств. Создан для обеспечения безопасности в государственных и образовательных учреждениях.
 
-**Qyragy Koz** — это инструмент для защиты USB-носителей с открытым исходным кодом. Программа защищает от вирусов автозапуска, скрытых майнеров и троянов. Поддерживает облачное сканирование через **VirusTotal** и уведомления в **Telegram**.
+✨ Основные функции:
+🚀 Мониторинг USB: Мгновенное обнаружение подключенных накопителей.
 
-### ✨ Возможности
-* **Авто-сканирование:** Мониторинг подключенных USB-устройств.
-* **Вакцинация:** Создание нестираемой папки `autorun.inf` для блокировки вирусов.
-* **Восстановление файлов:** Возвращает видимость скрытым папкам.
-* **Умная защита:** Анализ содержимого файлов автозапуска.
-* **Уведомления:** Отправка отчетов в Telegram-бот.
+🛡️ HID Guard: Защита от эмуляторов клавиатуры и устройств типа Rubber Ducky.
 
-### 🚀 Запуск
-1.  Скачайте архив или клонируйте репозиторий.
-2.  Установите библиотеки: `pip install -r requirements.txt` (или вручную).
-3.  Впишите свои API ключи в файл `QyragyKoz.py`.
-4.  Запустите файл.
+🔒 Paranoid Mode: Автоматическая блокировка компьютера при обнаружении угрозы.
 
----
+📱 Telegram Уведомления: Штурмовые оповещения о вирусах прямо на ваш смартфон.
 
-### ⚠️ Disclaimer / Ескерту
-This software is provided "as is", without warranty of any kind. Use it at your own risk.
-Бұл бағдарлама "бар күйінде" ұсынылады. Автор пайдалану нәтижелеріне жауапкершілік алмайды.
+💉 Вакцинация: Создание защищенной папки autorun.inf для предотвращения заражения.
 
-**Created with ❤️ in Kazakhstan**
+⚙️ Автозагрузка и Трей: Автозапуск вместе с Windows и работа в системном трее.
